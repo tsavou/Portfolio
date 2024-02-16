@@ -1,0 +1,42 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+    body {
+        font-size: 1.6rem;
+        font-family: 'Poppins', sans-serif;
+        color: $secondary-color;
+        background-color: $background-color;
+    }
+
+    .light-mode {
+        
+        background-color: $light-background-color;
+        color: $light-secondary-color;
+    }
+
+
+}
+
+a {
+    text-decoration: none;
+    color: $secondary-color;
+
+    &:hover {
+        color: $light-color;
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
+.flex {
+    display: flex;
+}
