@@ -1,0 +1,27 @@
+<template>
+    <div class="skill-card">
+    
+    <slot></slot>
+    
+    </div>
+    
+    </template>
+    
+    <style scoped lang="scss">
+    
+    .skill-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        background-color: $background-btn;
+        color: $secondary-color;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        gap: 1.5rem;
+        width: 15rem;
+    }
+    
+    </style>

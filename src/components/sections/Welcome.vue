@@ -1,7 +1,7 @@
 
 <script setup>
 
-import Button from './Button.vue';
+import Button from '@/components/Button.vue';
 
 </script>
 
@@ -21,7 +21,7 @@ import Button from './Button.vue';
 
         <div class="img-wrapper">
 
-            <img src="../assets/images/pp.jpg" alt="photo de Théo">
+            <img src="@/assets/images/pp.jpg" alt="photo de Théo">
             <div class="overlay"></div>
         </div>
 
@@ -35,7 +35,7 @@ import Button from './Button.vue';
 .home {
     justify-content: space-around;
     align-items: center;
-    height: calc(100vh - 20rem);
+    height: 100vh;
 
 
 
