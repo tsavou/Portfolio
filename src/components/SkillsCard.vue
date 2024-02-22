@@ -22,6 +22,11 @@
         font-weight: 700;
         gap: 1.5rem;
         width: 15rem;
+
+        &:hover {
+        transform: scale(1.02);
+        box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+    }
     }
     
     </style>

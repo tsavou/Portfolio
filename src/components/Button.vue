@@ -11,10 +11,9 @@
 
 .btn {
   position: relative;
-  padding: 10px 20px;
+  padding: 1rem;
   border-radius: 7px;
   border: 1px solid $primary-color;
-  font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
@@ -26,6 +25,13 @@
   -moz-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   width: fit-content;
+  cursor: pointer;
+  gap: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .btn:hover {

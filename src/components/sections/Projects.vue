@@ -1,12 +1,64 @@
+<script setup>
+import ProjectCard from '../ProjectCard.vue';
+
+
+</script>
+
+
 <template>
     <div class="projects" id="projects">
-        <h2><span>#</span> projects</h2>
+        <h2><span>#</span> Projects</h2>
 
-        <p>Hi, my name is Théo Savourat. I'm a Web Developer. After 5 years of management and finance studies, I decided to
-            become a Web Developer. I am passionate projects Web Development and actively seeking for new and exciting
-            opportunities to apply my skills and contribute to innovative projects. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Omnis voluptatibus enim reprehenderit autem ad amet voluptates, illum ut distinctio? Beatae,
-            deserunt magnam? Praesentium aliquam obcaecati corporis reprehenderit dolorem ipsam quo. </p>
+        <div class="cards">
+
+            <ProjectCard image="shoten.png" github="shoten_v1">
+                <template #title>Shoten</template>
+                <template #techno>Nuxt, Laravel and Sass</template>
+                <template #description>Application web développée en Nuxt.js et Laravel pour l'API, avec une approche
+                    mobile-first. Explorez un catalogue de manga et ajoutez facilement les volumes que vous possédez à votre
+                    collection. Avec son interface conviviale, Shoten offre une expérience fluide pour gérer votre
+                    collection de manga en ligne.</template>
+
+            </ProjectCard>
+
+            <ProjectCard image="shoten.png">
+                <template #title>Shoten</template>
+                <template #techno>Nuxt, Laravel and Sass</template>
+                <template #description>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat tempora odit quod
+                    deleniti sit nihil, a reprehenderit mollitia aut doloribus similique commodi rerum nisi distinctio,
+                    eveniet quae ipsam accusantium quas placeat! Vero provident eius, deleniti pariatur inventore sint
+                    repudiandae fuga doloribus debitis eveniet ipsam illo. Itaque quo reprehenderit eum
+                    exercitationem.</template>
+
+            </ProjectCard>
+
+            <ProjectCard image="shoten.png">
+                <template #title>Shoten</template>
+                <template #techno>Nuxt, Laravel and Sass</template>
+                <template #description>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat tempora odit quod
+                    deleniti sit nihil, a reprehenderit mollitia aut doloribus similique commodi rerum nisi distinctio,
+                </template>
+            </ProjectCard>
+            <ProjectCard image="shoten.png">
+                <template #title>Shoten</template>
+                <template #techno>Nuxt, Laravel and Sass</template>
+                <template #description>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat tempora odit quod
+                    deleniti sit nihil, a reprehenderit mollitia aut doloribus similique commodi rerum nisi distinctio,
+                </template>
+            </ProjectCard>
+            <ProjectCard image="shoten.png">
+                <template #title>Shoten</template>
+                <template #techno>Nuxt, Laravel and Sass</template>
+                <template #description>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat tempora odit quod
+                    deleniti sit nihil, a reprehenderit mollitia aut doloribus similique commodi rerum nisi distinctio,
+                </template>
+            </ProjectCard>
+           
+        </div>
+
+
+
+
 
     </div>
 </template>
@@ -15,11 +67,19 @@
 .projects {
     height: 100vh;
 
-
-    p{
-     padding: 2rem 2rem;
-     line-height: 1.5;
+    h2 {
+        margin-bottom: 2rem;
     }
 
 
-}</style>
+    .cards {
+        margin: 0 3rem;
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+    }
+
+
+
+}
+</style>

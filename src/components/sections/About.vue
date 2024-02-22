@@ -13,7 +13,7 @@
 
 <style scoped lang="scss">
 .about {
-    height: 100vh;
+    height: fit-content;
 
 
     p{
@@ -21,5 +21,6 @@
      line-height: 1.5;
     }
 
+}
 
-}</style>
+</style>
