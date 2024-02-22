@@ -6,46 +6,100 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 
     body {
         font-size: 1.6rem;
         font-family: 'Poppins', sans-serif;
         color: $secondary-color;
         background-color: $background-color;
+
+        a {
+            text-decoration: none;
+            color: $secondary-color;
+
+            &:hover {
+                color: $light-color;
+            }
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 500;
+            color: $light-color;
+
+            span {
+                color: $primary-color;
+                font-weight: 700;
+
+            }
+        }
+
+        h2 {
+            padding-top: 9rem;
+            color: $light-color;
+
+
+            span {
+                color: $primary-color;
+            }
+        }
+
+        .title {
+            color: $light-color;
+
+            span {
+                color: $primary-color;
+            }
+        }
+    
+
+        li {
+            list-style-type: none;
+        }
+
+        .flex {
+            display: flex;
+        }
     }
 
     .light-mode {
 
         background-color: $light-background-color;
         color: $light-secondary-color;
+
+        a {
+            color: $light-secondary-color;
+
+            &:hover {
+                color: $light-primary-color;
+            }
+        }
+
+        h1 {
+            color: $light-light-color;
+
+            span {
+                color: $light-primary-color;
+            }
+        }
+
+        h2 {
+            color: $light-light-color;
+
+            span {
+                color: $light-primary-color;
+            }
+        }
+
+        .title {
+            color: $light-light-color;
+
+            span {
+                color: $light-primary-color;
+            }
+        }
     }
 
 
-}
-
-a {
-    text-decoration: none;
-    color: $secondary-color;
-
-    &:hover {
-        color: $light-color;
-    }
-}
-
-li {
-    list-style-type: none;
-}
-
-.flex {
-    display: flex;
-}
-
-h2 {
-    padding-top: 9rem;
-    color: $light-color;
-
-
-    span{
-        color: $primary-color;
-    }
 }

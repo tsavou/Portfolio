@@ -81,18 +81,7 @@ header{
 
     background-color: $background-color;
 
-    h1 {
-        font-size: 2rem;
-        font-weight: 500;
-        color: $light-color;
-
-        span {
-            color: $primary-color;
-            font-weight: 700;
-
-        }
-    }
-
+   
 
     nav {
         ul {

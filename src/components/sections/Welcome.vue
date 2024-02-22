@@ -56,7 +56,7 @@ import Button from '@/components/Button.vue';
         line-height: 1.5;
 
         .title {
-            color: $light-color;
+            // color: $light-color;
             font-size: 3rem;
 
         }
