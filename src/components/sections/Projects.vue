@@ -65,6 +65,8 @@ import ProjectCard from '../ProjectCard.vue';
 
 <style scoped lang="scss">
 .projects {
+    min-height: 100vh;
+    padding: 1rem 0;
    
     h2 {
         margin-bottom: 2rem;

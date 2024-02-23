@@ -3,7 +3,16 @@ import { useDarkModeStore } from '@/stores/DarkMode';
 
 const mode = useDarkModeStore();
 
+const scrolled = () => {
+    const header = document.querySelector('header');
+    if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+}
 
+window.addEventListener('scroll', scrolled);
 
 </script>
 
@@ -61,12 +70,24 @@ const mode = useDarkModeStore();
 </template>
 
 <style lang="scss" scoped>
-
 header.light-mode {
     background-color: $light-background-color;
+
+    &.scrolled{
+       box-shadow: 0 1rem 1rem $light-primary-color; 
+    }
+
+    .language {
+        select {
+            
+            color: $light-secondary-color;
+            background-color: $light-background-color;
+        }
+    }
+    
 }
 
-header{
+header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -74,14 +95,18 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    z-index: 99;
-    box-shadow: 0 1rem 1rem #111C1B;
     padding: 1.5rem 0;
     height: 6rem;
 
     background-color: $background-color;
 
-   
+    &.scrolled{
+        box-shadow: 0 1rem 1rem #111C1B;
+        z-index: 100;
+
+    }
+
+
 
     nav {
         ul {
@@ -92,10 +117,14 @@ header{
 
             li {
                 a {
+                    font-weight: 500;
+                    font-size: 1.8rem;
+
                     span {
                         color: $primary-color;
-                        font-weight: 700;
                         margin: 0.34rem;
+                        font-weight: 700;
+                        font-size: 2rem;
                     }
                 }
             }
@@ -106,12 +135,13 @@ header{
 
     .language {
         select {
-            background-color: $background-btn;
+            background-color: $background-color;
             color: $secondary-color;
             border: none;
             border-radius: 0.5rem;
             padding: 0.5rem;
             font-weight: 700;
+            cursor: pointer;
 
         }
     }
@@ -129,7 +159,7 @@ header{
             place-items: center;
             cursor: pointer;
             line-height: 1;
-            
+
         }
 
         .input {
