@@ -59,7 +59,6 @@ const props = defineProps(['image', 'github']);
     height: 50rem;
 
     &:hover {
-        transform: scale(1.02);
         box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
     }
 

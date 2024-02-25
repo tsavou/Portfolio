@@ -1,7 +1,20 @@
 <script setup>
 import { useDarkModeStore } from '@/stores/DarkMode';
+import { useLanguageStore } from '@/stores/language';
+import fr from '@/assets/languages/fr';
+import en from '@/assets/languages/en';
 
 const mode = useDarkModeStore();
+
+const select = useLanguageStore();
+
+const content = () => {
+    if (select.language === 'fr') {
+        return fr.header;
+    } else {
+        return en.header;
+    }
+}
 
 const scrolled = () => {
     const header = document.querySelector('header');
@@ -21,10 +34,10 @@ window.addEventListener('scroll', scrolled);
         <h1><span>T</span>héo <br> <span>S</span>avourat</h1>
         <nav>
             <ul>
-                <li> <a href="#home"> <span>#</span>Home</a></li>
-                <li> <a href="#about"> <span>#</span>About me</a></li>
-                <li> <a href="#skills"> <span>#</span>Skills</a></li>
-                <li> <a href="#projects"> <span>#</span>Projects</a></li>
+                <li> <a href="#home"> <span>#</span>{{ content().home }}</a></li>
+                <li> <a href="#about"> <span>#</span>{{ content().about }}</a></li>
+                <li> <a href="#skills"> <span>#</span>{{ content().skills }}</a></li>
+                <li> <a href="#projects"> <span>#</span>{{ content().projects }}</a></li>
                 <!-- <li> <a href="#contact"> <span>#</span>Contact</a></li> -->
 
             </ul>
@@ -34,7 +47,7 @@ window.addEventListener('scroll', scrolled);
         <div class="container flex">
 
             <div class="language">
-                <select name="language" id="language">
+                <select name="language" id="language" v-model="select.language">
                     <option value="fr">
                         FR <img src="../assets/images/France.svg" alt="french flag">
                     </option>

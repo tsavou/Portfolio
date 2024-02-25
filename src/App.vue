@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import { useDarkModeStore } from '@/stores/DarkMode';
+
 const mode= useDarkModeStore();
 
 </script>

@@ -1,7 +1,23 @@
 
 <script setup>
 
+
 import Button from '@/components/Button.vue';
+import fr from '@/assets/languages/fr';
+import en from '@/assets/languages/en';
+import {useLanguageStore} from '@/stores/language';
+
+
+const selectedLanguage = useLanguageStore();
+
+
+const content = () => {
+    if (selectedLanguage.language === 'fr') {
+        return fr.home;
+    } else {
+        return en.home;
+    }
+}
 
 </script>
 
@@ -10,11 +26,9 @@ import Button from '@/components/Button.vue';
     <div class="home flex" id="home">
 
         <div class="text">
-            <p class="title">Hello, my name is <span>Théo Savourat</span> </p>
-            <p class="title">I'm a <span>Web Developer</span></p>
-            <p class="about">Passionate about <span>Web Development</span> and actively seeking for new and exciting
-                opportunities to
-                apply my skills and contribute to innovative projects.</p>
+            <p class="title">{{ content().welcome}} <span>Théo Savourat</span> </p>
+            <p class="title"> <span>{{ content().job }}</span></p>
+            <p class="about">{{ content().description }}</p>
 
             <a href="./CV_Theo_Savourat.pdf" target="_blank">
                 <Button>
@@ -24,7 +38,7 @@ import Button from '@/components/Button.vue';
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
 
-                    Check out my resume
+                    {{ content().resume }}
                 </Button>
             </a>
 
