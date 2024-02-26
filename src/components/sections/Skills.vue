@@ -6,7 +6,7 @@ import SkillsCard from '@/components/SkillsCard.vue';
 
 <template>
     <div class="skills" id="skills">
-        <h2><span>#</span> My Skills</h2>
+        <h2><span>#</span> Skills</h2>
         <div class="cards">
 
             <SkillsCard>

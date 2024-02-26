@@ -1,5 +1,19 @@
 <script setup>
 import ProjectCard from '../ProjectCard.vue';
+import { useLanguageStore } from '@/stores/language';
+import fr from '@/assets/languages/fr';
+import en from '@/assets/languages/en';
+
+
+const select = useLanguageStore();
+
+const content = () => {
+    if (select.language === 'fr') {
+        return fr.projects;
+    } else {
+        return en.projects;    }
+
+}
 
 
 </script>
@@ -14,10 +28,7 @@ import ProjectCard from '../ProjectCard.vue';
             <ProjectCard image="shoten.png" github="shoten_v1">
                 <template #title>Shoten</template>
                 <template #techno>Nuxt, Laravel and Sass</template>
-                <template #description>Application web développée en Nuxt.js et Laravel pour l'API, avec une approche
-                    mobile-first. Explorez un catalogue de manga et ajoutez facilement les volumes que vous possédez à votre
-                    collection. Avec son interface conviviale, Shoten offre une expérience fluide pour gérer votre
-                    collection de manga en ligne.</template>
+                <template #description>{{ content().shoten }}</template>
 
             </ProjectCard>
 
@@ -78,6 +89,7 @@ import ProjectCard from '../ProjectCard.vue';
         display: flex;
         gap: 3rem;
         flex-wrap: wrap;
+        
     }
 
 

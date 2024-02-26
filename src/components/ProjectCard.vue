@@ -4,6 +4,21 @@ import Button from './Button.vue';
 
 const props = defineProps(['image', 'github']);
 
+import fr from '@/assets/languages/fr';
+import en from '@/assets/languages/en';
+import { useLanguageStore } from '@/stores/language';
+
+
+const select = useLanguageStore();
+
+const content = () => {
+    if (select.language === 'fr') {
+        return fr.projects;
+    } else {
+        return en.projects;    }
+
+}
+
 </script>
 
 <template>
@@ -36,7 +51,7 @@ const props = defineProps(['image', 'github']);
                         fill="#ADF0DD" />
                 </svg>
 
-                <span>Check on GitHub</span>
+                <span>{{ content().github }}</span>
             </Button>
         </a>
 
@@ -102,6 +117,7 @@ const props = defineProps(['image', 'github']);
         -webkit-box-orient: vertical;
         display: -webkit-box;
         -webkit-line-clamp: 8;
+        font-size: 1.3rem;
 
 
     }

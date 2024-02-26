@@ -10,9 +10,9 @@ const select = useLanguageStore();
 
 const content = () => {
     if (select.language === 'fr') {
-        return fr.header;
+        return fr.nav;
     } else {
-        return en.header;
+        return en.nav;
     }
 }
 
@@ -31,7 +31,7 @@ window.addEventListener('scroll', scrolled);
 
 <template>
     <header :class="!mode.isDark ? 'light-mode' : 'dark-mode'">
-        <h1><span>T</span>héo <br> <span>S</span>avourat</h1>
+        <h1><span>T</span>heo <span>S</span>avourat</h1>
         <nav>
             <ul>
                 <li> <a href="#home"> <span>#</span>{{ content().home }}</a></li>
@@ -86,18 +86,18 @@ window.addEventListener('scroll', scrolled);
 header.light-mode {
     background-color: $light-background-color;
 
-    &.scrolled{
-       box-shadow: 0 1rem 1rem $light-primary-color; 
+    &.scrolled {
+        box-shadow: 0 1rem 1rem $light-primary-color;
     }
 
     .language {
         select {
-            
+
             color: $light-secondary-color;
             background-color: $light-background-color;
         }
     }
-    
+
 }
 
 header {
@@ -113,7 +113,7 @@ header {
 
     background-color: $background-color;
 
-    &.scrolled{
+    &.scrolled {
         box-shadow: 0 1rem 1rem #111C1B;
         z-index: 100;
 
@@ -132,13 +132,19 @@ header {
                 a {
                     font-weight: 500;
                     font-size: 1.8rem;
+                    display: flex;
+                    align-items: center;
 
                     span {
                         color: $primary-color;
                         margin: 0.34rem;
                         font-weight: 700;
                         font-size: 2rem;
+
+
                     }
+
+                   
                 }
             }
 
