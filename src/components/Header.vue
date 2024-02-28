@@ -48,11 +48,8 @@ window.addEventListener('scroll', scrolled);
 
             <div class="language">
                 <select name="language" id="language" v-model="select.language">
-                    <option value="fr">
-                        FR <img src="../assets/images/France.svg" alt="french flag">
-                    </option>
-                    <option value="en">EN <img src="../assets/images/EN.svg" alt="English flag">
-                    </option>
+                    <option value="fr">FR </option>
+                    <option value="en">EN</option>
                 </select>
             </div>
 
@@ -144,7 +141,7 @@ header {
 
                     }
 
-                   
+
                 }
             }
 

@@ -26,8 +26,9 @@ const content = () => {
     <div class="home flex" id="home">
 
         <div class="text">
-            <p class="title">{{ content().welcome }} <span>Théo Savourat</span> </p>
-            <p class="title"> <span>{{ content().job }}</span></p>
+            <p class="welcome"> {{ content().welcome }}</p>
+            <p class="title"> Théo Savourat </p>
+            <p class="job"> {{ content().job }}</p>
             <p class="about">{{ content().description }}</p>
 
             <a href="./CV_Theo_Savourat.pdf" target="_blank">
@@ -66,26 +67,33 @@ const content = () => {
     height: 100vh;
 
 
-
     .text {
-
+        text-align: left;
         padding: 0 10rem;
         line-height: 1.5;
+        max-width: 70%;
+
+        .welcome {
+            // color: $secondary-color;
+            font-style: italic;
+        }
 
         .title {
             // color: $light-color;
-            font-size: 3rem;
+            font-size: 4rem;
+            font-weight: 700;
 
         }
 
-        .about {
-            margin: 4rem 0;
-        }
-
-        p {
-            span {
+        .job {
+           
                 color: $primary-color;
-            }
+                font-weight: 700;
+                font-size: 2rem;
+            
+        }
+        .about {
+            margin: 3.5rem 0;
         }
 
     }
@@ -95,7 +103,7 @@ const content = () => {
         border-radius: 5rem;
         overflow: hidden;
         position: relative;
-        max-width: 40rem;
+        max-width: 30rem;
         border: $secondary-color 1px solid;
 
 

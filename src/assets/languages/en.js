@@ -9,8 +9,8 @@ export default {
     home: {
         welcome: "Hello, I'm",
         job: "Web Developer",
-        description: "Passionate about Web Development and actively seeking for new and exciting opportunities to apply my skills and contribute to innovative projects",
-        resume: "Get my resume",
+        description: "Currently seeking professional opportunities in the field of web development, I invite you to explore my portfolio to discover my skills, projects, and learn more about me.",
+        resume: "Check out my resume",
     },
 
     about: {

@@ -9,7 +9,7 @@ export default {
     home: {
         welcome: "Bonjour, je suis",
         job: "Développeur Web",
-        description: "Passionné par le développement web et à la recherche de nouvelles opportunités pour appliquer mes compétences et contribuer à des projets innovants.",
+        description: " Actuellement à la recherche d'opportunités professionnelles dans le domaine du développement web, je vous invite à explorer mon portfolio pour découvrir mes compétences, mes projets et en savoir plus sur moi.",
         resume: "Consultez mon CV",
     },
 
