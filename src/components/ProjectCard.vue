@@ -15,7 +15,8 @@ const content = () => {
     if (select.language === 'fr') {
         return fr.projects;
     } else {
-        return en.projects;    }
+        return en.projects;
+    }
 
 }
 
@@ -23,7 +24,7 @@ const content = () => {
 
 <template>
     <div class="project-card">
-        
+
         <div class="img-wrapper">
             <img :src="`/src/assets/images/projects/${image}`" alt=" project image">
         </div>
@@ -33,14 +34,15 @@ const content = () => {
             <slot name="title"></slot>
         </h3>
 
-        <p class="techno"><span>Tech : </span>
-            <slot name="techno"> </slot>
-        </p>
+
         <p class="description">
             <slot name="description"></slot>
         </p>
 
-
+        <p class="techno">
+            <!-- <span>Tech : </span> -->
+            <slot name="techno" class="techno-list"> </slot>
+        </p>
 
         <a :href="`https://github.com/tsavou/${github}`" target="_blank">
 
@@ -66,12 +68,12 @@ const content = () => {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 0.8rem;
     background-color: $background-btn;
     color: $secondary-color;
     border-radius: 1rem;
     width: 30rem;
-    height: 50rem;
+    height: 60rem;
 
     &:hover {
         box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
@@ -79,13 +81,13 @@ const content = () => {
 
     .img-wrapper {
         width: 100%;
-        height: 40%;
+        height: 43%;
 
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center;
+            object-position: top;
             border-radius: 0.5rem;
 
         }
@@ -95,6 +97,7 @@ const content = () => {
     h3 {
         font-weight: 700;
         color: $primary-color;
+        
     }
 
     p {
@@ -108,12 +111,17 @@ const content = () => {
             font-weight: 700;
             color: $light-color;
         }
+
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: flex-end;
     }
 
     .description {
         overflow: hidden;
         height: 18rem;
-        text-overflow :ellipsis;
+        text-overflow: ellipsis;
         -webkit-box-orient: vertical;
         display: -webkit-box;
         -webkit-line-clamp: 8;
@@ -122,9 +130,9 @@ const content = () => {
 
     }
 
-    .project-btn{
+    .project-btn {
         font-size: 1.2rem;
-        padding: 0 0.5rem ;
+        padding: 0 0.5rem;
 
 
     }

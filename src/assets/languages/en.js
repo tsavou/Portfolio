@@ -23,6 +23,12 @@ export default {
         github: "Check on Github",
 
         shoten: "Shoten is a web application that allows users to shorten long URLs. It was built with React and Node.js. It uses a database called PostgreSQL.",
+
+        labelcars: "LabelCars is a web application that allows users to manage their car database. It was built with Vue and Node.js.",
+
+        oldbattle: "Game of cards that allows you to play against an old character of your choice. Select your character and choose the attacks you want to use. It was built with PHP.",
+
+        vueflix:" A Vue.js project developed during training, serving as a movie catalog. Explore a vast selection of films with a user-friendly, responsive interface. Perfect for diving into Vue.js concepts and building dynamic web apps"
     }
 }
 

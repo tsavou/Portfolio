@@ -20,7 +20,7 @@ const content = () => {
     <div class="about" id="about">
         <h2><span>#</span> {{ content().title }}</h2>
 
-        <p>{{ content().description }} </p>
+        <p v-html="content().description"> </p>
 
     </div>
 </template>
