@@ -1,8 +1,14 @@
+<script setup>
+
+const props = defineProps(['link']);
+
+</script>
+
 <template>
 
-    <div class="btn">
+    <a class="btn" :href="props.link" target="_blank">
         <slot></slot>
-    </div>
+    </a>
 
 </template>
 
@@ -31,7 +37,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .btn:hover {
