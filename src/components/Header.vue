@@ -95,6 +95,18 @@ header.light-mode {
         }
     }
 
+    nav {
+        ul {
+            li {
+                a {
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 header {
@@ -107,12 +119,12 @@ header {
     right: 0;
     padding: 1.5rem 0;
     height: 6rem;
-
+    z-index: 100;
     background-color: $background-color;
 
     &.scrolled {
         box-shadow: 0 1rem 1rem #111C1B;
-        z-index: 100;
+
 
     }
 
@@ -139,6 +151,10 @@ header {
                         font-size: 2rem;
 
 
+                    }
+
+                    &:hover {
+                        font-weight: 700;
                     }
 
 

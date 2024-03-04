@@ -117,13 +117,14 @@ const content = () => {
     }
 
     .description {
-        overflow: hidden;
+        // overflow: hidden;
         height: 18rem;
-        text-overflow: ellipsis;
-        -webkit-box-orient: vertical;
-        display: -webkit-box;
-        -webkit-line-clamp: 8;
+        // text-overflow: ellipsis;
+        // -webkit-box-orient: vertical;
+        // display: -webkit-box;
+        // -webkit-line-clamp: 8;
         font-size: 1.3rem;
+        line-height: 1.6;
 
 
     }

@@ -15,16 +15,14 @@ export default {
 
     about: {
         title: "A propos de moi",
-        description:`
-        Je m'appelle Théo Savourat et je suis un développeur web passionné par la création d'expériences numériques innovantes. Mon parcours académique a débuté avec un DUT en Gestion/Management, suivi d'une Licence 3 en Management et d'un Master en Finance. Bien que j'aie obtenu mon diplôme de master, j'ai rapidement réalisé que ces domaines ne suscitaient pas en moi la passion ni l'intérêt que je recherchais dans ma carrière professionnelle. <br/><br/>
-        
-        Après cinq années d'études, j'ai pris la décision de me tourner vers un domaine qui correspond réellement à mes aspirations et à mes centres d'intérêt. C'est ainsi que j'ai entrepris une reconversion professionnelle dans le développement web. J'ai suivi une formation intensive de six mois pour préparer le titre professionnel de Développeur Web et Web Mobile, que j'ai obtenu avec succès en janvier 2024.<br/><br/>
-        
-        Cette transition m'a permis de combiner ma curiosité pour la technologie avec ma passion pour la création. Je suis motivé par les défis techniques et créatifs que le développement web offre, et je suis constamment en quête de nouvelles compétences et de projets stimulants.<br/><br/>
-        
-        À travers mon parcours, j'ai appris l'importance de suivre ses passions et de poursuivre ses rêves avec détermination. Je suis désormais prêt à mettre mes compétences en développement web au service de projets innovants et à contribuer à la création de solutions numériques exceptionnelles.
+        description: `
+        Bonjour, Je m'appelle <strong class="highlight">Théo Savourat</strong>, j'ai 25 ans et je suis un <strong class="highlight">développeur web </strong>fraîchement diplômé, animé par la passion de créer des expériences numériques innovantes. <br><br>
+        Après cinq années d'études dans les domaines de la gestion et de la finance, couronnées par l'obtention d'un <strong class="highlight"> master en finance </strong>, j'ai pris la décision en 2023 de me réorienter vers le développement web. Bien que mes études précédentes ne m'aient pas passionné, j'ai persévéré pour obtenir mon diplôme de master. Cependant, j'ai rapidement ressenti le besoin de me tourner vers un domaine qui me passionne réellement.<br><br>
+        Mon intérêt pour le numérique, le web et la logique m'a naturellement conduit vers le développement web. Ce choix était motivé par ma conviction que le développement est un domaine en constante évolution, offrant un apprentissage perpétuel et une stimulation intellectuelle continue. L'aspect logique et l'opportunité d'apprendre sans cesse m'ont séduit et encouragé à entreprendre cette reconversion.<br><br>
+        Ma <strong class="highlight"> reconversion </strong> s'est concrétisée par une formation intensive de six mois pour préparer le <strong class="highlight"> titre professionnel de développeur web et web mobile</strong>, que j'ai obtenu avec succès en janvier 2024. Fort des compétences acquises durant cette formation, je suis déterminé à continuer à me développer professionnellement dans le domaine du développement web.<br><br>
+        Aujnourdhui, je suis particulièrement intéressé par les <strong class="highlight"> opportunités </strong> dans les domaines du <strong class="highlight"> développement front-end, back-end ou full-stack </strong> au sein d'entreprises innovantes et dynamiques où je pourrai contribuer à des projets innovants tout en continuant à apprendre et à progresser.<br><br>
+        Mon parcours antérieur m'a doté de compétences analytiques et d'une pensée stratégique qui se combinent parfaitement avec les compétences techniques acquises durant ma formation de développement web. Je suis convaincu que ma transition réussie vers le développement web, combinée à ces compétences, me permettra d'apporter une perspective unique et une valeur ajoutée à tout projet auquel je contribue.<br><br>
         `
-        
 
     },
 
@@ -37,11 +35,19 @@ export default {
         Explorez un catalogue de manga et ajoutez facilement les volumes que vous possédez à votre collection. <br>
         Avec son interface conviviale, Shoten offre une expérience fluide pour gérer votre collection de manga en ligne.`,
 
-        labelcars: "projet de formation comprenant une API Node.js et un site mobile Vue.js conçu pour consommer cette API. Créez, gérez et interagissez avec une base de données de voitures grâce à cette application polyvalente.",
+        labelcars: `Projet de formation <br>
+         Application web developée en Vue.js et conçue pour consommer une API de voitures developpée avec Node.js. <br>
+         Consultez les voitures disponibles et leurs informations, ajoutez ou supprimez des voitures à la base de données grâce à cette application polyvalente.`,
 
-        oldbattle: "Projet php en formation - jeu de combat de cartes qui fait s'affronter des vieux personnages de la pop culture. Sélectionnez votre personnage et choisissez les bonnes attaques pour affrontez un personnage aléatoire.",
+        oldbattle:`Projet de formation PHP <br>
+          Jeu de combat de cartes qui fait s'affronter des vieux personnages de la pop culture. <br>
+          Sélectionnez votre personnage et affrontez un personnage au hasard. <br> Choisissez ensuite les attaques qui vous mèneront à la victoire.`,
 
-        vueflix: " Projet Vue.js developpé en formation - Application web de catalogue de films. Explorez une grande collection de films avec une interface conviviale. Permettant de naviguer dans une large gamme de films."
+        vueflix: `Projet  developpé en formation Vue.js <br>
+         Application web de catalogue de films. <br>
+         Explorez une grande collection de films avec une interface conviviale. <br>
+         Consultez leur description et leur bande-annonce. <br><br>
+         Et ajoutez des films à votre panier.`,
 
 
 

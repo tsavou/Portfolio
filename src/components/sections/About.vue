@@ -34,8 +34,23 @@ const content = () => {
      padding: 2rem 2rem;
      line-height: 1.5;
      text-align: justify;
+
+     span {
+         color: $primary-color;
+         font-weight: 600;
+         
+     }
     }
 
+}
+
+</style>
+
+<style lang="scss">
+
+.highlight {
+    color: $primary-color;
+    font-size: 1.05em;
 }
 
 </style>

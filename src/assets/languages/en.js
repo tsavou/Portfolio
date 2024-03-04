@@ -15,20 +15,42 @@ export default {
 
     about: {
         title: "About me",
-        description: "Hi, my name is Théo Savourat. I am a Web Developer. After 5 years of management and finance studies, I decided to become a Web Developer. I am passionate about Web Development and actively seeking for new and exciting opportunities to apply my skills and contribute to innovative projects. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatibus enim reprehenderit autem ad amet voluptates, illum ut distinctio? Beatae,deserunt magnam? Praesentium aliquam obcaecati corporis reprehenderit dolorem ipsam quo."
+        description: `
+       Hi there, I'm <strong class="highlight">Théo Savourat</strong>, 25 years old, and I'm a <strong class="highlight">web developer</strong> and I am a recent graduate in web development, driven by the passion to create innovative digital experiences. <br><br>
+        After five years of studies in the fields of management and finance, culminating in a <strong class="highlight">master's degree in finance</strong>, I made the decision in 2023 to reorient myself towards web development. Although my previous studies didn't inspire me, I persevered to obtain my master's degree. However, I quickly felt the need to turn to a field that truly excites me.<br><br>
+        My interest in digital technology, the web, and logic naturally led me to web development. This choice was driven by my belief that development is a constantly evolving field, offering perpetual learning and continuous intellectual stimulation. The logical aspect and the opportunity to constantly learn intrigued and motivated me to undertake this career change.<br><br>
+        
+        My <strong class="highlight"> transition </strong> into the field of web development took shape through an intensive six-month training program aimed at obtaining the <strong class="highlight"> professional certificate in web and mobile development </strong>, which I successfully completed in January 2024. Equipped with the skills acquired during this training, I am determined to further my professional development in the field of web development. <br><br>
+
+        Currently, I am particularly interested in <strong class="highlight">opportunities</strong> in the fields of <strong class="highlight">front-end, back-end, or full-stack development</strong> within innovative and dynamic companies where I can contribute to innovative projects while continuing to learn and grow.<br><br>
+        My previous experience has equipped me with analytical skills and strategic thinking that complement the technical skills acquired during my web development training. I am confident that my successful transition to web development, combined with these skills, will enable me to bring a unique perspective and added value to any project I contribute to.<br><br>
+
+        
+        `
     },
 
     projects: {
         title: "Projects",
         github: "Check on Github",
 
-        shoten: "Shoten is a web application that allows users to shorten long URLs. It was built with React and Node.js. It uses a database called PostgreSQL.",
-
-        labelcars: "LabelCars is a web application that allows users to manage their car database. It was built with Vue and Node.js.",
-
-        oldbattle: "Game of cards that allows you to play against an old character of your choice. Select your character and choose the attacks you want to use. It was built with PHP.",
-
-        vueflix:" A Vue.js project developed during training, serving as a movie catalog. Explore a vast selection of films with a user-friendly, responsive interface. Perfect for diving into Vue.js concepts and building dynamic web apps"
+        shoten: `Web application developed in Nuxt.js and Laravel for the API, with a mobile-first approach. <br>
+        Explore a manga catalog and easily add volumes you own to your collection. <br>
+        With its user-friendly interface, Shoten offers a seamless experience for managing your manga collection online.`,
+        
+        labelcars: `Training project <br>
+        Web application developed in Vue.js and designed to consume a cars API developed with Node.js. <br>
+        Browse available cars and their information, add or remove cars from the database with this versatile application.`,
+        
+        oldbattle: `PHP training project <br>
+        Card battle game that pits old pop culture characters against each other. <br>
+        Select your character and battle a random character. <br> Then choose the attacks that will lead you to victory.`,
+        
+        vueflix: `Project developed during Vue.js training <br>
+        Web application for a movie catalog. <br>
+        Explore a large collection of movies with a user-friendly interface. <br>
+        View their description and trailer. <br><br>
+        And add movies to your cart.`,
+        
     }
 }
 

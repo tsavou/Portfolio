@@ -66,7 +66,7 @@ const content = () => {
                 </svg>
 
                 </template>
-                <template #description>{{ content().labelcars }}</template>
+                <template #description><p v-html="content().labelcars"></p></template>
 
             </ProjectCard>
 
@@ -86,7 +86,7 @@ const content = () => {
                         fill="white" />
                 </svg>
                 </template>
-                <template #description>{{ content().oldbattle }}</template>
+                <template #description> <p v-html="content().oldbattle"></p></template>
             </ProjectCard>
             <ProjectCard image="vueflix.png" github="vueflix">
                 <template #title>Vueflix</template>
@@ -96,7 +96,7 @@ const content = () => {
                     <path d="M5.625 3L12 13.875L18.375 3H14.625L12.049 7.50947L9.375 3H5.625Z" fill="#35495E" />
                 </svg>
                 </template>
-                <template #description>{{ content().vueflix }}</template>
+                <template #description> <p v-html="content().vueflix"></p></template>
             </ProjectCard>            
 
         </div>
