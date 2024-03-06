@@ -63,14 +63,29 @@ const content = () => {
 .home {
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    height: calc(100vh - 8rem);
+
+    @media screen and (max-width: $lg-bp) {
+        flex-direction: column;
+        padding-top: 10rem;
+        height: auto;
+        gap: 5rem;
+    }
+        
+    
 
 
     .text {
         text-align: left;
-        padding: 0 10rem;
+        padding: 0 5rem;
         line-height: 1.5;
         max-width: 70%;
+
+        @media screen and (max-width: $lg-bp) {
+            padding: 0;
+            max-width: 100%;
+            
+        }
 
         .welcome {
             // color: $secondary-color;
@@ -81,6 +96,10 @@ const content = () => {
             // color: $light-color;
             font-size: 4rem;
             font-weight: 700;
+
+            @media screen and (max-width: $md-bp) {
+                font-size: 3.5rem;
+            }
 
         }
 
@@ -94,6 +113,7 @@ const content = () => {
 
         .about {
             margin: 3.5rem 0;
+            
         }
         
 
@@ -106,6 +126,11 @@ const content = () => {
         position: relative;
         max-width: 30rem;
         border: $secondary-color 1px solid;
+
+        @media screen and (max-width: $md-bp) {
+
+            max-width: 24rem;
+        }
 
 
 

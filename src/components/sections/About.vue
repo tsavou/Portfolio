@@ -11,7 +11,8 @@ const content = () => {
     if (select.language === 'fr') {
         return fr.about;
     } else {
-        return en.about;    }
+        return en.about;
+    }
 
 }
 </script>
@@ -20,7 +21,7 @@ const content = () => {
     <div class="about" id="about">
         <h2><span>#</span> {{ content().title }}</h2>
 
-        <p v-html="content().description"> </p>
+        <div class="description" v-html="content().description"> </div>
 
     </div>
 </template>
@@ -30,27 +31,33 @@ const content = () => {
     height: fit-content;
 
 
-    p{
-     padding: 2rem 2rem;
-     line-height: 1.5;
-     text-align: justify;
+    .description {
+        padding: 2rem 0;
+        line-height: 1.5;
+        text-align: justify;
 
-     span {
-         color: $primary-color;
-         font-weight: 600;
-         
-     }
+        p{
+            margin-bottom: 2rem;
+        }
+
+        @media screen and (max-width: $lg-bp) {
+            text-align: left;
+        }
+
     }
 
 }
-
 </style>
 
 <style lang="scss">
+
+.description-paragraph {
+    margin-bottom: 2rem;
+    
+}
 
 .highlight {
     color: $primary-color;
     font-size: 1.05em;
 }
-
 </style>

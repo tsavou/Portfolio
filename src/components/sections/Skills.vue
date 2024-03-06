@@ -173,7 +173,6 @@ import SkillsCard from '@/components/SkillsCard.vue';
 
 <style scoped lang="scss">
 .skills {
-    height: 100vh;
 
 
     .cards {
@@ -182,7 +181,19 @@ import SkillsCard from '@/components/SkillsCard.vue';
         align-items: center;
         gap: 5rem;
         flex-wrap: wrap;
-        padding: 8rem;
+        padding-top: 5rem;
+
+
+
+        @media screen and (max-width: $sm-bp) {
+
+            gap: 2.5rem;
+            svg {
+                width: 5rem;
+
+            }
+
+        }
     }
 
 

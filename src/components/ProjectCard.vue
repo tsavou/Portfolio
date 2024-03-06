@@ -71,7 +71,7 @@ const content = () => {
     color: $secondary-color;
     border-radius: 1rem;
     width: 30rem;
-    height: 60rem;
+    height: 58rem;
 
     &:hover {
         box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
@@ -117,12 +117,7 @@ const content = () => {
     }
 
     .description {
-        // overflow: hidden;
         height: 18rem;
-        // text-overflow: ellipsis;
-        // -webkit-box-orient: vertical;
-        // display: -webkit-box;
-        // -webkit-line-clamp: 8;
         font-size: 1.3rem;
         line-height: 1.6;
 

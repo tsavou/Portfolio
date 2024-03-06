@@ -46,6 +46,7 @@ const props = defineProps(['link']);
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   border: 1px solid $background-btn;
+  color: $light-color;
 }
 
 .btn:hover::before {
