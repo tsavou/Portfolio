@@ -55,59 +55,59 @@ const content = () => {
 
 <style scoped lang="scss">
 
-footer {
+    footer {
 
-    padding: 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.3rem;
-    border-top: $secondary-color 1px solid;
+        padding: 2rem 15rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.3rem;
+        border-top: 1px solid $secondary-color;
 
-    @media screen and (max-width: $md-bp) {
-        flex-direction: column;
-    }
-
-    .socials {
-        .mobile {
-            @media screen and (min-width: $md-bp) {
-                display: none;
+        @media screen and (max-width: $md-bp) {
+            flex-direction: column;
+            padding: 2rem 0;
         }
+
+        .socials {
+            .mobile {
+                @media screen and (min-width: $md-bp) {
+                    display: none;
+                }
             }
-            
-    }
 
-    .infos {
-       p{
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;        
-       }
+        }
 
-       @media screen and (max-width: $md-bp) {
-        display: none;
-       }
-    }
+        .infos {
+            p {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
 
-    .copyright {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
+            @media screen and (max-width: $md-bp) {
+                display: none;
+            }
+        }
 
-        
-        .name {
-        font-size: 4.5rem;
-        font-weight: normal;
-        color: $light-color;
-        font-family: 'Jalliya';
+        .copyright {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
 
-        span {
-            color: $primary-color;
+
+            .name {
+                font-size: 4.5rem;
+                font-weight: normal;
+                font-family: 'Jalliya';
+
+                span {
+                    color: $primary-color;
+                }
+            }
+
+
         }
     }
-
-    
-    }
-}
 </style>
