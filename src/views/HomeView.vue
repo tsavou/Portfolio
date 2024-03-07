@@ -5,6 +5,7 @@ import Socials from '@/components/socials/Socials.vue';
 import Welcome from '@/components/sections/Welcome.vue';
 import Skills from '@/components/sections/Skills.vue';
 import Projects from '@/components/sections/Projects.vue';
+import Footer from '@/components/Footer.vue';
 
 </script>
 
@@ -17,7 +18,9 @@ import Projects from '@/components/sections/Projects.vue';
         <About />
         <Skills />
         <Projects class="projects" />
+        
     </main>
+    <Footer />
 </template>
 
 <style scoped lang="scss">

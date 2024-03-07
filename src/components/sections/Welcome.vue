@@ -139,6 +139,7 @@ const content = () => {
             height: 100%;
             object-fit: cover;
             display: block;
+            
         }
 
         .overlay {
@@ -150,6 +151,11 @@ const content = () => {
             background-color: $primary-color;
             opacity: 0.3;
             z-index: 1;
+
+            &:hover {
+                opacity: 0;
+                transition: all 1s ease-in-out;
+            }
         }
 
     }
