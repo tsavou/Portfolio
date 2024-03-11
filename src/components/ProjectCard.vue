@@ -26,7 +26,8 @@ const content = () => {
     <div class="project-card">
 
         <div class="img-wrapper">
-            <img :src="`/src/assets/images/projects/${image}`" alt=" project image">
+            <!-- <img :src="'src/assets/images/projects/' + image" :alt="github + ' preview'"> -->
+            <slot name="image"></slot>
         </div>
 
 

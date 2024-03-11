@@ -27,6 +27,9 @@ const content = () => {
         <div class="cards">
 
             <ProjectCard image="shoten.png" github="shoten_v1">
+                <template #image>
+                    <img src="@/assets/images/projects/shoten.png" alt="Shoten preview">
+                </template>
                 <template #title>Shoten</template>
                 <template #techno>
                     <svg width="36" height="36" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,6 +53,7 @@ const content = () => {
             </ProjectCard>
 
             <ProjectCard image="labelcars.png" github="Label-cars">
+                <template #image> <img src="@/assets/images/projects/labelcars.png" alt=""> </template>
                 <template #title>Label Cars</template>
                 <template #techno>
 
@@ -75,6 +79,9 @@ const content = () => {
             </ProjectCard>
 
             <ProjectCard image="oldbattle.png" github="TheOldBattle">
+                <template #image>
+                    <img src="@/assets/images/projects/oldbattle.png" alt="The Old Battle preview">
+                </template>
                 <template #title>The Old Battle</template>
                 <template #techno>
                     <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -95,6 +102,9 @@ const content = () => {
                 </template>
             </ProjectCard>
             <ProjectCard image="vueflix.png" github="vueflix">
+                <template #image>
+                    <img src="@/assets/images/projects/vueflix.png" alt="vueflix preview">
+                </template>
                 <template #title>Vueflix</template>
                 <template #techno>
                     <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -123,22 +133,22 @@ const content = () => {
     padding-bottom: 1rem;
 
     h2 {
-        margin: 0 20rem 2rem ; 
+        margin: 0 20rem 2rem;
 
         @media screen and (max-width: $sm-bp) {
-            margin: 0 4rem 2rem ;
+            margin: 0 4rem 2rem;
         }
 
 
 
         @media screen and (min-width: $sm-bp) and (max-width: $md-bp) {
-            margin: 0 3rem 2rem ;
+            margin: 0 3rem 2rem;
             ;
 
         }
 
         @media screen and (min-width: $md-bp) and (max-width: $lg-bp) {
-            margin: 0 8rem 2rem ;
+            margin: 0 8rem 2rem;
 
         }
     }
@@ -152,9 +162,9 @@ const content = () => {
         margin: 0 6rem;
 
         @media screen and (max-width: $sm-bp) {
-            margin: 0 ;
+            margin: 0;
         }
-      
+
 
         // .none {
         //     visibility: hidden;
@@ -165,6 +175,15 @@ const content = () => {
         // }
 
     }
+
+    img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 0.5rem;
+
+        }
 
 
 
