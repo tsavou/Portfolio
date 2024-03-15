@@ -30,20 +30,23 @@ const content = () => {
             <slot name="image"></slot>
         </div>
 
+        <div class="flex content-header">
+            <h3>
+                <slot name="title"></slot>
+            </h3>
 
-        <h3>
-            <slot name="title"></slot>
-        </h3>
+            <p class="techno">
+                <!-- <span>Tech : </span> -->
+                <slot name="techno" class="techno-list"> </slot>
+            </p>
 
+        </div>
 
         <p class="description">
             <slot name="description"></slot>
         </p>
 
-        <p class="techno">
-            <!-- <span>Tech : </span> -->
-            <slot name="techno" class="techno-list"> </slot>
-        </p>
+
 
 
         <Button class="project-btn" :link="`https://github.com/tsavou/${github}`">
@@ -60,19 +63,22 @@ const content = () => {
 
     </div>
 </template>
-    
+
 <style scoped lang="scss">
 .project-card {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    // justify-content: space-between;
+    gap: 1.5rem;
     padding: 0.8rem;
     background-color: $background-btn;
     color: $secondary-color;
     border-radius: 1rem;
     width: 30rem;
-    height: 58rem;
+    height: 55rem;
+    transition: 0.3s ease-in-out;
+
 
     &:hover {
         box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
@@ -80,7 +86,10 @@ const content = () => {
 
     .img-wrapper {
         width: 100%;
-        height: 43%;
+        height: 46%;
+        filter: blur(0.3rem);
+        transition: 0.3s ease-in-out;
+                
 
         img {
             width: 100%;
@@ -88,16 +97,39 @@ const content = () => {
             object-fit: cover;
             object-position: top;
             border-radius: 0.5rem;
+        }
 
+        &:hover {
+            filter: blur(0);
+        }
+
+        
+    }
+
+    .content-header {
+        align-items: center;
+        justify-content: space-between;
+
+        h3 {
+            font-weight: 700;
+            color: $primary-color;
+
+        }
+
+        .techno {
+            span {
+                font-weight: 700;
+                color: $light-color;
+            }
+
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            // justify-content: flex-end;
         }
     }
 
 
-    h3 {
-        font-weight: 700;
-        color: $primary-color;
-
-    }
 
     p {
         font-size: 1.5rem;
@@ -105,17 +137,7 @@ const content = () => {
         text-align: justify;
     }
 
-    .techno {
-        span {
-            font-weight: 700;
-            color: $light-color;
-        }
 
-        display: flex;
-        gap: 1rem;
-        align-items: center;
-        justify-content: flex-end;
-    }
 
     .description {
         height: 18rem;
