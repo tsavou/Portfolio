@@ -22,7 +22,7 @@ const content = () => {
 
 <template>
     <div class="projects" id="projects">
-        <h2><span>#</span> Projects</h2>
+        <h2><span>#</span> {{ content().title }}</h2>
 
         <div class="cards">
 

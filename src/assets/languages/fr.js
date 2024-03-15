@@ -1,9 +1,9 @@
 export default {
     nav: {
-        home: "accueil",
-        about: "à propos",
-        projects: "projets",
-        skills: "compétences",
+        home: "Accueil",
+        about: "À propos",
+        projects: "Projets",
+        skills: "Compétences",
     },
 
     home: {
@@ -11,37 +11,43 @@ export default {
         job: "Développeur Web",
         description: " Actuellement à la recherche d'opportunités professionnelles dans le domaine du développement web, je vous invite à explorer mon portfolio pour découvrir mes compétences, mes projets et en savoir plus sur moi.",
         resume: "Consultez mon CV",
+        contact: "Contactez moi",
     },
 
     about: {
         title: "A propos de moi",
-        description: `
-                <p class="description-paragraph">
-            Bonjour, Je m'appelle <strong class="highlight">Théo Savourat</strong>, j'ai 25 ans et je suis un <strong class="highlight">développeur web </strong>fraîchement diplômé, animé par la passion de créer des expériences numériques innovantes.
+        seeBtn: "En savoir plus",
+        hideBtn: "Réduire",
+        main: `
+            <p class=" about-title description-paragraph">
+             Bonjour, je m'appelle <strong class="highlight">Théo Savourat</strong>. 
+             </p> 
+             <p class="about-title description-paragraph"> 
+             J'ai 25 ans et je suis un <strong class="highlight">développeur web </strong>fraîchement diplômé, animé par la passion de créer des expériences numériques innovantes.
+            </p>     
+            `,
+        content: `
+            <p class="description-paragraph">
+            Après cinq années d'études couronnées par l'obtention d'un <strong class="highlight"> master en finance</strong>, j'ai pris la décision en 2023 de me réorienter vers un domaine qui me passionne réellement: le <strong class="highlight"> développement web</strong>.
+        </p>
+       
+        <p class="description-paragraph">
+            Ma <strong class="highlight"> reconversion </strong> s'est concrétisée par l'obtention du <strong class="highlight"> titre professionnel de développeur web et web mobile</strong> en janvier 2024.
         </p>
         <p class="description-paragraph">
-            Après cinq années d'études dans les domaines de la gestion et de la finance, couronnées par l'obtention d'un <strong class="highlight"> master en finance </strong>, j'ai pris la décision en 2023 de me réorienter vers le développement web. Bien que mes études précédentes ne m'aient pas passionné, j'ai persévéré pour obtenir mon diplôme de master. Cependant, j'ai rapidement ressenti le besoin de me tourner vers un domaine qui me passionne réellement.
+        Mon parcours antérieur m'a doté de compétences analytiques et d'une pensée stratégique qui se combinent parfaitement avec mes compétences de développeur, permettant d'apporter une perspective unique et une valeur ajoutée à tout projet auquel je contribue.
         </p>
         <p class="description-paragraph">
-            Mon intérêt pour le numérique, le web et la logique m'a naturellement conduit vers le développement web. Ce choix était motivé par ma conviction que le développement est un domaine en constante évolution, offrant un apprentissage perpétuel et une stimulation intellectuelle continue. L'aspect logique et l'opportunité d'apprendre sans cesse m'ont séduit et encouragé à entreprendre cette reconversion.
+            Aujourd'hui, je suis particulièrement intéressé par les <strong class="highlight"> opportunités </strong> dans les domaines du <strong class="highlight"> développement front-end, back-end ou full-stack </strong> au sein d'entreprises innovantes et dynamiques où je pourrai contribuer à des projets novateurs tout en continuant à apprendre et à progresser.
         </p>
-        <p class="description-paragraph">
-            Ma <strong class="highlight"> reconversion </strong> s'est concrétisée par une formation intensive de six mois pour préparer le <strong class="highlight"> titre professionnel de développeur web et web mobile</strong>, que j'ai obtenu avec succès en janvier 2024. Fort des compétences acquises durant cette formation, je suis déterminé à continuer à me développer professionnellement dans le domaine du développement web.
-        </p>
-        <p class="description-paragraph">
-            Aujourd'hui, je suis particulièrement intéressé par les <strong class="highlight"> opportunités </strong> dans les domaines du <strong class="highlight"> développement front-end, back-end ou full-stack </strong> au sein d'entreprises innovantes et dynamiques où je pourrai contribuer à des projets innovants tout en continuant à apprendre et à progresser.
-        </p>
-        <p class="description-paragraph">
-            Mon parcours antérieur m'a doté de compétences analytiques et d'une pensée stratégique qui se combinent parfaitement avec les compétences techniques acquises durant ma formation de développement web. Je suis convaincu que ma transition réussie vers le développement web, combinée à ces compétences, me permettra d'apporter une perspective unique et une valeur ajoutée à tout projet auquel je contribue.
-        </p>
-
             `
+
 
     },
 
 
     projects: {
-        title: "Projects",
+        title: "Projets",
         github: "Voir sur Github",
 
         shoten: `Application web développée en Nuxt.js et Laravel pour l'API, avec une approche mobile-first. <br>

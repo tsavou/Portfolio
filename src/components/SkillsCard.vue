@@ -34,6 +34,7 @@
         &:hover {
         transform: scale(1.02);
         box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+        transition: all 0.3s ease-in-out;
     }
     }
     

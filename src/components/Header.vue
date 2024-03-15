@@ -38,6 +38,7 @@ const menuOpened = ref(false);
 
 <template>
     <header :class="!mode.isDark ? 'light-mode' : 'dark-mode'">
+        
         <h1><span>T</span>heo <span>S</span>avourat</h1>
 
         <input class="menu-btn" type="checkbox" id="menu-btn" v-model="menuOpened" />
