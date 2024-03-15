@@ -76,7 +76,7 @@ const content = () => {
     color: $secondary-color;
     border-radius: 1rem;
     width: 30rem;
-    height: 55rem;
+    height: 56rem;
     transition: 0.3s ease-in-out;
 
 
@@ -89,7 +89,7 @@ const content = () => {
         height: 46%;
         filter: blur(0.3rem);
         transition: 0.3s ease-in-out;
-                
+
 
         img {
             width: 100%;
@@ -103,7 +103,7 @@ const content = () => {
             filter: blur(0);
         }
 
-        
+
     }
 
     .content-header {
