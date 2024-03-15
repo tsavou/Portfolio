@@ -40,7 +40,7 @@ const seeMore = ref(false)
                 </div>
             </div>
 
-            <div  class="content" :class="{ 'see-more': seeMore } " v-html="content().content">
+            <div class="content" :class="{ 'see-more': seeMore }" v-html="content().content">
             </div>
 
         </div>
@@ -53,8 +53,13 @@ const seeMore = ref(false)
 <style scoped lang="scss">
 .about {
 
+    h2 {
+        margin-bottom: 2rem;
+    }
+
     .flex {
-        gap: 2rem;
+        gap: 3rem;
+        justify-content: center;
         line-height: 1.5;
         padding-top: 2rem;
 
@@ -66,16 +71,21 @@ const seeMore = ref(false)
             width: 50%;
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            justify-content: center;
 
             @media screen and (max-width: $md-bp) {
                 width: 100%;
+            }
+
+            @media screen and (min-width: 1500px) {
+                width: 40%;
             }
 
             .img-wrapper {
                 position: relative;
                 border-radius: 5rem;
                 overflow: hidden;
+                // max-width: 50rem;
 
                 img {
                     width: 100%;
@@ -98,7 +108,7 @@ const seeMore = ref(false)
 
                 @media screen and (max-width: $md-bp) {
                     display: none;
-                    
+
                 }
             }
 
@@ -106,8 +116,12 @@ const seeMore = ref(false)
 
         .content {
 
+
             @media screen and (min-width: $md-bp) {
                 width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
             }
 
         }
@@ -119,7 +133,7 @@ const seeMore = ref(false)
 
     @media screen and (max-width: $md-bp) {
 
-        
+
 
         .btn {
             display: block;
@@ -157,12 +171,12 @@ const seeMore = ref(false)
 
 <style lang="scss">
 .about-title {
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.9rem;
+    font-weight: 500;
 
     @media screen and (max-width: $md-bp) {
         font-size: 1.5rem;
-        
+
     }
 }
 

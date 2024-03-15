@@ -46,6 +46,12 @@ main {
 
         }
 
+        @media screen and (min-width: $lg-bp) {
+            margin:0 18rem; ;
+        }
+
+       
+
     }
 
 
