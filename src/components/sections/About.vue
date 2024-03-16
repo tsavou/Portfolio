@@ -58,8 +58,8 @@ const seeMore = ref(false)
     }
 
     .flex {
-        gap: 3rem;
-        justify-content: center;
+        gap: 4rem;
+        justify-content: space-evenly;
         line-height: 1.5;
         padding-top: 2rem;
 
@@ -78,7 +78,7 @@ const seeMore = ref(false)
             }
 
             @media screen and (min-width: 1500px) {
-                width: 40%;
+                width: 37%;
             }
 
             .img-wrapper {

@@ -135,11 +135,13 @@ const content = () => {
 
     .img-wrapper {
 
-        border-radius: 5rem;
+        border-radius: 4rem;
         overflow: hidden;
         position: relative;
         max-width: 30rem;
-        border: $secondary-color 1px solid;
+        box-shadow: 0 0 20px 1px $primary-color;
+        border: $primary-color 2px solid;
+
 
         @media screen and (max-width: $lg-bp) {
             max-width: 24rem;
@@ -152,6 +154,8 @@ const content = () => {
             align-self: flex-start;
             border-radius: 50%;
             margin-bottom: 1rem;
+            box-shadow: 0 0 10px 1px $primary-color;
+
         }
 
 
@@ -171,7 +175,7 @@ const content = () => {
             right: 0;
             bottom: 0;
             background-color: $primary-color;
-            opacity: 0.3;
+            opacity: 0.2;
             z-index: 1;
 
             &:hover {

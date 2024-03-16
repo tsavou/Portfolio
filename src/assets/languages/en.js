@@ -46,19 +46,19 @@ export default {
         title: "Projects",
         github: "Check on Github",
 
-        shoten: `Web application developed in Nuxt.js and Laravel for the API, with a mobile-first approach. <br>
+        shoten: `Web application developed in <strong class="highlight">Nuxt.js</strong> and <strong class="highlight">Laravel</strong> for the API, with a <strong class="highlight">mobile-first</strong>  approach. <br>
         Explore a manga catalog and easily add volumes you own to your collection. <br>
         With its user-friendly interface, Shoten offers a seamless experience for managing your manga collection online.`,
 
         labelcars: `Training project <br>
-        Web application developed in Vue.js and designed to consume a cars API developed with Node.js. <br>
+        Web application developed in <strong class="highlight">Vue.js</strong> and designed to consume a cars <strong class="highlight">API</strong> developed with <strong class="highlight">Node.js</strong>. <br>
         Browse available cars and their information, add or remove cars from the database with this versatile application.`,
 
-        oldbattle: `PHP training project <br>
+        oldbattle: `<strong class="highlight">PHP</strong> training project <br>
         Card battle game that pits old pop culture characters against each other. <br>
         Select your character and battle a random character. <br> Then choose the attacks that will lead you to victory.`,
 
-        vueflix: `Project developed during Vue.js training <br>
+        vueflix: `Project developed during <strong class="highlight">Vue.js</strong> training <br>
         Web application for a movie catalog. <br>
         Explore a large collection of movies with a user-friendly interface. <br>
         View their description and trailer. <br><br>

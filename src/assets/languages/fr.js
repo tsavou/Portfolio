@@ -50,19 +50,19 @@ export default {
         title: "Projets",
         github: "Voir sur Github",
 
-        shoten: `Application web développée en Nuxt.js et Laravel pour l'API, avec une approche mobile-first. <br>
+        shoten: `Application web développée en <strong class="highlight"> Nuxt.js </strong> et <strong class="highlight">Laravel</strong> pour l'API, avec une approche <strong class="highlight"> mobile-first</strong>. <br>
         Explorez un catalogue de manga et ajoutez facilement les volumes que vous possédez à votre collection. <br>
         Avec son interface conviviale, Shoten offre une expérience fluide pour gérer votre collection de manga en ligne.`,
 
-        labelcars: `Projet de formation <br>
-         Application web developée en Vue.js et conçue pour consommer une API de voitures developpée avec Node.js. <br>
+        labelcars: `<p> Projet de formation. </p>
+         Application web developée en <strong class="highlight">Vue.js</strong> et conçue pour consommer une <strong class="highlight">API</strong> de voitures developpée avec <strong class="highlight">Node.js</strong>. <br>
          Consultez les voitures disponibles et leurs informations, ajoutez ou supprimez des voitures à la base de données grâce à cette application polyvalente.`,
 
-        oldbattle: `Projet de formation PHP <br>
+        oldbattle: `Projet de formation <strong class="highlight">PHP </strong> <br>
           Jeu de combat de cartes qui fait s'affronter des vieux personnages de la pop culture. <br>
           Sélectionnez votre personnage et affrontez un personnage au hasard. <br> Choisissez ensuite les attaques qui vous mèneront à la victoire.`,
 
-        vueflix: `Projet  developpé en formation Vue.js <br>
+        vueflix: `Projet  developpé en formation <strong class="highlight"> Vue.js </strong ><br>
          Application web de catalogue de films. <br>
          Explorez une grande collection de films avec une interface conviviale. <br>
          Consultez leur description et leur bande-annonce. <br><br>

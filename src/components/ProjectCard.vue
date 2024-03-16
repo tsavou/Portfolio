@@ -77,7 +77,14 @@ const content = () => {
     border-radius: 1rem;
     width: 30rem;
     height: 56rem;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
+
+    &:hover {        
+        
+        .img-wrapper {
+            filter: brightness(1);
+        }
+    }
 
 
     &:hover {
@@ -87,8 +94,11 @@ const content = () => {
     .img-wrapper {
         width: 100%;
         height: 46%;
-        filter: blur(0.3rem);
-        transition: 0.3s ease-in-out;
+        transition: 0.5s all ease-in-out;
+        position: relative;
+        filter: brightness(0.6);
+
+      
 
 
         img {
@@ -97,12 +107,7 @@ const content = () => {
             object-fit: cover;
             object-position: top;
             border-radius: 0.5rem;
-        }
-
-        &:hover {
-            filter: blur(0);
-        }
-
+        }        
 
     }
 
@@ -156,3 +161,5 @@ const content = () => {
 
 }
 </style>
+
+
