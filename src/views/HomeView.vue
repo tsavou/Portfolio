@@ -25,6 +25,8 @@ import Footer from '@/components/Footer.vue';
 
 <style scoped lang="scss">
 main {
+
+    margin-bottom: 5rem;
     > :not(.projects) {
         margin: 0 20rem;
 

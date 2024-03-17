@@ -129,7 +129,7 @@ const content = () => {
 
 <style scoped lang="scss">
 .projects {
-    min-height: 100vh;
+    // min-height: 100vh;
     padding-bottom: 1rem;
 
     h2 {
