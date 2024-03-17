@@ -69,17 +69,17 @@ const content = () => {
 
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
+    justify-content: space-between;
     gap: 1.5rem;
     padding: 0.8rem;
     background-color: $background-btn;
     color: $secondary-color;
     border-radius: 1rem;
     width: 30rem;
-    height: 56rem;
+    min-height: 58rem;
     transition: 0.5s ease-in-out;
 
-    &:hover {        
+     &:hover {        
         
         .img-wrapper {
             filter: brightness(1);
@@ -93,7 +93,7 @@ const content = () => {
 
     .img-wrapper {
         width: 100%;
-        height: 46%;
+        height: 44%;
         transition: 0.5s all ease-in-out;
         position: relative;
         filter: brightness(0.6);
@@ -148,13 +148,13 @@ const content = () => {
         height: 18rem;
         font-size: 1.3rem;
         line-height: 1.6;
-
-
     }
 
     .project-btn {
         font-size: 1.2rem;
         padding: 0 0.5rem;
+        margin-top: 0.5rem;
+        align-self: flex-end;
 
 
     }
