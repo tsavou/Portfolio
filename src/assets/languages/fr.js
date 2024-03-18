@@ -49,6 +49,7 @@ export default {
     projects: {
         title: "Projets",
         github: "Voir sur Github",
+        demo: "Site web",
 
         shoten: `Application web développée en <strong class="highlight"> Nuxt.js </strong> et <strong class="highlight">Laravel</strong> pour l'API, avec une approche <strong class="highlight"> mobile-first</strong>. <br>
         Explorez un catalogue de manga et ajoutez facilement les volumes que vous possédez à votre collection. <br>

@@ -78,7 +78,7 @@ const content = () => {
 
             </ProjectCard>
 
-            <ProjectCard image="oldbattle.png" github="TheOldBattle">
+            <ProjectCard image="oldbattle.png" github="TheOldBattle" link="https://larixedesanciens.fun/">
                 <template #image>
                     <img src="@/assets/images/projects/oldbattle.png" alt="The Old Battle preview">
                 </template>
