@@ -101,7 +101,7 @@ const content = () => {
                     <p v-html="content().oldbattle"></p>
                 </template>
             </ProjectCard>
-            <ProjectCard image="vueflix.png" github="vueflix">
+            <ProjectCard image="vueflix.png" github="vueflix" link="https://vueflix.theosavourat.fr/">
                 <template #image>
                     <img src="@/assets/images/projects/vueflix.png" alt="vueflix preview">
                 </template>
