@@ -171,7 +171,15 @@ const content = () => {
             padding: 0.3rem;
 
         }
-       
+
+        @media screen and (max-width: $sm-bp) {           
+            span{
+               font-size: 1.1rem;
+               
+            }            
+        }
+
+               
     }
 
     .project {
